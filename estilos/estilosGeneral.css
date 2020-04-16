@@ -1,0 +1,48 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body
+{
+    background-color: beige;
+}
+
+.home
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex
+{
+    flex: 1;
+    min-width: 250px;
+}
+
+.in-flex:first-child
+{
+    flex: 2;
+    padding: 25px;
+    background-color: burlywood;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.in-flex div
+{
+    padding: 25px;
+    background-color: burlywood;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
