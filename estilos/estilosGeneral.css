@@ -15,8 +15,6 @@ body
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
-    overflow: hidden;
-    
 }
 
 .main
@@ -77,6 +75,33 @@ footer
     margin-top: 20px;
 }
 
+.menu .menu-content i
+{
+    margin-right: 10px;
+}
+
+#icono
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    position: fixed;
+    margin-left: 10px;
+    display: none;
+}
+
+label
+{
+    cursor: pointer;
+    position: fixed;
+    font-size: 25px;
+}
+
+#check
+{
+    display: none;
+}
+
 @media screen and (max-width:800px)
 {
     body
@@ -91,16 +116,39 @@ footer
     {
         width: 100%;
     }
-}
-
-@media screen and (max-width:400px)
-{
-    .contenedor
+    label #icono
     {
+        display: block;
+        width: 80%;
+        background: brown;
+        margin: 0;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        
+        
+    }
+    .menu
+    {
+        
+        display: none;
+    }
+    #check:checked ~ .menu
+    {
+        width: 400px;
+    }
+    .menu-content
+    {
+        float: left;
         width: 100%;
     }
-}
+    .menu-content li
+    {
+        display: block;
+        float: none;
+        border-bottom: 2px solid white;
+    }
 
+}
 
 
 
