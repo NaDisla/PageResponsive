@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/estilosGeneral.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/paraMenu.js"></script>
     <title>Mi Página Responsive</title>
 </head>
 <body>
     <div class="contenedor">
             <header>
-                
-                    <input type="checkbox" id="check">
-                <label for="check"><i class="fas fa-align-justify" id="icono"></i></label>
-                
+                <div class="btn-menu-bar">
+                    <a href="#" class="btn-menu" onclick="PresionarMenu()"><i class="fas fa-align-justify"></i>Bienvenido</a>
+                </div>
                 
                 <nav class="menu">
+                    <h3>Bienvenido</h3>
                     <ul class="menu-content">
                         <li><i class="fas fa-money-check-alt"></i>Pagos</li>
                         <li><i class="fas fa-shoe-prints"></i>Planes</li>
-                        <li>Nosotros</li>
+                        <li><i class="fas fa-user-friends"></i>Nosotros</li>
+                        <li><i class="far fa-address-book"></i>Mi Historial</li>
+                        <li><i class="fas fa-biking"></i>Rutinas</li>
+                        
                     </ul>
                 </nav>
             </header>

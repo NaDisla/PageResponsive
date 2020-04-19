@@ -12,9 +12,7 @@ body
 
 .contenedor
 {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .main
@@ -56,6 +54,18 @@ body
     cursor: pointer;
 }
 
+.menu h3
+{
+    color: white;
+    padding: 15px;
+    float: left;
+}
+
+.btn-menu-bar
+{
+    display: none;
+}
+
 aside
 {
     width: 30%;
@@ -80,29 +90,7 @@ footer
     margin-right: 10px;
 }
 
-#icono
-{
-    color: white;
-    text-decoration: none;
-    margin-top: 15px;
-    position: fixed;
-    margin-left: 10px;
-    display: none;
-}
-
-label
-{
-    cursor: pointer;
-    position: fixed;
-    font-size: 25px;
-}
-
-#check
-{
-    display: none;
-}
-
-@media screen and (max-width:800px)
+@media screen and (max-width:980px)
 {
     body
     {
@@ -116,37 +104,56 @@ label
     {
         width: 100%;
     }
-    label #icono
-    {
-        display: block;
-        width: 80%;
-        background: brown;
-        margin: 0;
-        padding-top: 8px;
-        padding-bottom: 10px;
-        
-        
-    }
     .menu
     {
-        
-        display: none;
-    }
-    #check:checked ~ .menu
-    {
-        width: 400px;
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        margin-top: 50px;
+        left: -100%;
     }
     .menu-content
     {
         float: left;
-        width: 100%;
+        margin-top: 5px;
+        margin-left: 13px;
+        width: 95%; 
     }
     .menu-content li
     {
         display: block;
         float: none;
-        border-bottom: 2px solid white;
+        border-bottom: solid 1px white;
     }
+    .btn-menu-bar
+    {
+        display: block;
+        width: 100%;
+        background-color: teal;
+        position: fixed;
+        z-index: 5;
+    }
+    .btn-menu-bar a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    .btn-menu i
+    {
+        font-size: 20px;
+        color: white;
+        margin: 15px;
+    }
+    .menu h3
+    {
+        display: none;
+    }
+    .main
+    {
+        margin-top: 50px;
+    }
+
 
 }
 
