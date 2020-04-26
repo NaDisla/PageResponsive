@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/estilos/estilosGeneral.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/paraMenu.js"></script>
     <title>Mi Página Responsive</title>
 </head>
 <body>
     <div class="contenedor">
-            <header class="menu">
-                    <ul class="menu-content">
-                        <li>Mi Perfil</li>
-                        <li>Pagos</li>
-                        <li>Planes</li>
-                        <li>Sobre Nosotros</li>
-                    </ul>
+            <header>
+                <div class="btn-menu-bar">
+                    <a href="#" class="btn-menu" onclick="PresionarMenu()"><i class="fas fa-align-justify"></i>Bienvenido</a>
+                </div>
                 
+                <nav class="menu">
+                    <h3>Bienvenido</h3>
+                    <ul class="menu-content">
+                        <li><i class="fas fa-money-check-alt"></i>Pagos</li>
+                        <li><i class="fas fa-shoe-prints"></i>Planes</li>
+                        <li><i class="fas fa-user-friends"></i>Nosotros</li>
+                        <li><i class="far fa-address-book"></i>Mi Historial</li>
+                        <li><i class="fas fa-biking"></i>Rutinas</li>
+                        
+                    </ul>
+                </nav>
             </header>
             <section class="main">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quia similique amet aliquid, magni dignissimos atque reiciendis, vitae quisquam quae porro modi est tempore. 

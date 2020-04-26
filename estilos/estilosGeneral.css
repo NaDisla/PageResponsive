@@ -12,11 +12,7 @@ body
 
 .contenedor
 {
-    width: 80%;
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    
+    width: 100%;
 }
 
 .main
@@ -58,6 +54,18 @@ body
     cursor: pointer;
 }
 
+.menu h3
+{
+    color: white;
+    padding: 15px;
+    float: left;
+}
+
+.btn-menu-bar
+{
+    display: none;
+}
+
 aside
 {
     width: 30%;
@@ -77,7 +85,12 @@ footer
     margin-top: 20px;
 }
 
-@media screen and (max-width:800px)
+.menu .menu-content i
+{
+    margin-right: 10px;
+}
+
+@media screen and (max-width:980px)
 {
     body
     {
@@ -91,16 +104,58 @@ footer
     {
         width: 100%;
     }
-}
-
-@media screen and (max-width:400px)
-{
-    .contenedor
+    .menu
     {
-        width: 100%;
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        margin-top: 50px;
+        left: -100%;
     }
-}
+    .menu-content
+    {
+        float: left;
+        margin-top: 5px;
+        margin-left: 13px;
+        width: 95%; 
+    }
+    .menu-content li
+    {
+        display: block;
+        float: none;
+        border-bottom: solid 1px white;
+    }
+    .btn-menu-bar
+    {
+        display: block;
+        width: 100%;
+        background-color: teal;
+        position: fixed;
+        z-index: 5;
+    }
+    .btn-menu-bar a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    .btn-menu i
+    {
+        font-size: 20px;
+        color: white;
+        margin: 15px;
+    }
+    .menu h3
+    {
+        display: none;
+    }
+    .main
+    {
+        margin-top: 50px;
+    }
 
+
+}
 
 
 
