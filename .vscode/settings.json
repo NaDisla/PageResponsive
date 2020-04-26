@@ -1,5 +1,5 @@
 {
-    "git.enableCommitSigning": true,
+    "git.enableCommitSigning": false,
     "powermode.presets": "flames"
     
 }
